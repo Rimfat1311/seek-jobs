@@ -8,8 +8,8 @@ const Login = () => {
     const [password, setPassword] = useState('');
 
     return (
-        <div className='flex justify-center items-center min-h-screen bg-gray-100'>
-            <div className='flex flex-col mx-50 p-10 w-2/7 max-w-md bg-white border rounded-md'>
+        <div className='flex justify-center items-center min-h-screen bg-gray-100 '>
+            <div className='flex flex-col mx-50 p-10 pb-24 w-2/7 max-w-md bg-white border rounded-md'>
                 <form className='flex flex-col items-center justify-center'>
                     <img src={logo} alt="Logo" width='200' />
                     <p className='mt-4 text-3xl pb-5'>Login</p>
@@ -30,7 +30,7 @@ const Login = () => {
                         onChange={(e) => setPassword(e.target.value)}
                         className="w-80 mb-5 py-1 bg-gray-100 border border-gray-300 rounded-md focus:outline-none"
                     />
-                    <button className='bg-[#3B82F6] hover:bg-blue-600 w-80 py-1 my-3 text-white rounded-md'>Submit</button>
+                    <Link to="/dashboard"><button className='bg-[#3B82F6] hover:bg-blue-600 w-80 py-1 my-3 text-white rounded-md'><span>Submit</span></button></Link>
                     <button className='bg-blue-200 hover:bg-blue-600 w-80 py-1 my-3 text-[#3B82F6] hover:text-white rounded-md'>Demo App</button>
                     <p>Not a member yet? <Link to="/register" className='text-blue-500 hover:underline'>Register</Link></p> {/* Updated Link */}
                 </form>
