@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <main className='w-full flex h-screen'>
        <Sidebar/>
-      <div className='bg-blue-400 w-4/5'>dashboard</div>
+      <div className='bg-blue-400 w-4/5'><Navbar /> <div></div></div>
      
     </main>
   )
