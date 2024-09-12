@@ -1,32 +1,54 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link
 import logo from '../assets/logo.svg';
+import { toast } from 'react-toastify';
+
 
 const Register = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleSubmit = (e) => {
-       e.preventDefault()
-    
-       if(name == ""  || email ==""  || password=="") {
-        alert("required")  
-        return 
-       }
-        const userData = {
-            name,
-            email,
-            password,
-    
-        }
-        console.log(userData)
+    const handleSubmit = async (e) => {
+        e.preventDefault()
 
-      
-      
+        if (name == "" || email == "" || password == "") {
+            toast.error("required")
+            return
+        }
+        try {
+            const userData = {
+                name,
+                email,
+                password,
+            }
+            console.log(userData)
+            const response = await fetch("http://localhost:4000/api/v1/auth/signup", {
+                method: "POST",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body: JSON.stringify(userData)
+
+            })
+            const data = await response.json()
+                console.log(data)
+            
+            
+            if (!response.ok){
+                throw new Error(data.message)
+                return
+            }
+
+            toast.success("sucessful")
+        } catch (error) {
+            console.log(error)
+            toast.error(error.message)
+
+        }
     }
 
-  
+
 
     return (
         <div className='flex justify-center items-center min-h-screen bg-gray-100 py-10 '>

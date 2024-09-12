@@ -1,16 +1,58 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link
 import logo from '../assets/logo.svg';
+import { toast } from 'react-toastify';
 
 const Login = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+
+
+
+        if (email == "" || password == "") {
+            toast.error("required")
+            return
+        }
+
+        try {
+            const userData = {
+                email,
+                password,
+            }
+            console.log(userData)
+            const response = await fetch("http://localhost:4000/api/v1/auth/signin",{
+                method: "POST",
+                headers:{
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(userData) 
+            })
+            const data = await response.json()
+            console.log(data)
+
+            if(!response.ok){
+                throw new Error(data.message)
+                return
+            }
+
+            toast.success("successful")
+
+        } catch (error) {
+            console.log(error)
+            toast.error(error.message)
+
+            
+        }
+    }
+
     return (
         <div className='flex justify-center items-center min-h-screen bg-gray-100 '>
             <div className='flex flex-col mx-50 p-10 pb-24 w-2/7 max-w-md bg-white border rounded-md'>
-                <form className='flex flex-col items-center justify-center'>
+                <form onSubmit={handleSubmit} className='flex flex-col items-center justify-center'>
                     <img src={logo} alt="Logo" width='200' />
                     <p className='mt-4 text-3xl pb-5'>Login</p>
                     <label className='flex self-start text-lg' htmlFor="email">Email</label>
