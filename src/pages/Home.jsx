@@ -10,14 +10,12 @@ const Home = () => {
                 <img src={logo} alt="logo" />
             </div>
             <div className='flex flex-row items-center gap-20'>
-                <div className='space-y-12'>
+                <div className=''>
                     <header className='text-5xl font-semibold font-sans'>
                         job <span className='text-[#3B82F6]'>Tracking</span>App
                     </header>
-                    <p>
-                        Crucifix narwhal street art asymmetrical, humblebrag tote bag pop-up fixie raclette taxidermy<br />
-                        craft beer. Brunch bitters synth, VHS crucifix heirloom<br />
-                        meggings bicycle rights.
+                    <p className='from-neutral-400 py-10'>
+                    Crucifix narwhal street art asymmetrical, humblebrag tote bag pop-up fixie <br /> raclette taxidermy craft beer. Brunch bitters synth, VHS crucifix heirloom meggings bicycle rights.
                     </p>
                     <Link to="/login">
                         <button className='bg-[#3B82F6] text-white rounded-md text-xl font-semibold px-6 py-1'>

@@ -8,7 +8,7 @@ import Dashboard from './pages/Dashboard';
 const App = () => {
   return (
     <Router>
-      <div className='bg-[#F0F4F8] h-screen'>
+      <div >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
