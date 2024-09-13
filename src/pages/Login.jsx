@@ -72,7 +72,7 @@ const Login = () => {
                         onChange={(e) => setPassword(e.target.value)}
                         className="w-80 mb-5 py-1 bg-gray-100 border border-gray-300 rounded-md focus:outline-none"
                     />
-                    <Link to="/dashboard"><button className='bg-[#3B82F6] hover:bg-blue-600 w-80 py-1 my-3 text-white rounded-md'><span>Submit</span></button></Link>
+                   <button className='bg-[#3B82F6] hover:bg-blue-600 w-80 py-1 my-3 text-white rounded-md'><span>Submit</span></button>
                     <button className='bg-blue-200 hover:bg-blue-600 w-80 py-1 my-3 text-[#3B82F6] hover:text-white rounded-md'>Demo App</button>
                     <p>Not a member yet? <Link to="/register" className='text-blue-500 hover:underline'>Register</Link></p> {/* Updated Link */}
                 </form>
