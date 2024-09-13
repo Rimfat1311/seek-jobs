@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
-import Page1 from './Page1'
+
 
 const Dashboard = () => {
   return (
