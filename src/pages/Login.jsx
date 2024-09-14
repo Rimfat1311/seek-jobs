@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom'; 
 import logo from '../assets/logo.svg';
 import { toast } from 'react-toastify';
 
@@ -74,7 +74,7 @@ const Login = () => {
                     />
                    <button className='bg-[#3B82F6] hover:bg-blue-600 w-80 py-1 my-3 text-white rounded-md'><span>Submit</span></button>
                     <button className='bg-blue-200 hover:bg-blue-600 w-80 py-1 my-3 text-[#3B82F6] hover:text-white rounded-md'>Demo App</button>
-                    <p>Not a member yet? <Link to="/register" className='text-blue-500 hover:underline'>Register</Link></p> {/* Updated Link */}
+                    <p>Not a member yet? <Link to="/register" className='text-blue-500 hover:underline'>Register</Link></p>
                 </form>
             </div>
         </div>
