@@ -17,14 +17,15 @@ const Dashboard = () => {
       <Sidebar />
       <div className='bg-[#F0F4F8] w-4/5'>
         <Navbar />
-        <div>Dashboard</div>
+        
         <Routes>
-          <Route path="/" element={<Layout1 />}>
+          
             <Route path="status" element={<Status />} />
+            
             <Route path="addJobs" element={<AddJobs />} />
             <Route path="allJobs" element={<AllJobs />} />
             <Route path="profile" element={<Profile />} />
-          </Route>
+          
         </Routes>
       </div>
     </main>
