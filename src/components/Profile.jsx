@@ -1,8 +1,12 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <div>
+      Profile
+      <Outlet />
+    </div>
   )
 }
 

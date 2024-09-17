@@ -1,13 +1,13 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-const Status = () => {
+const Layout4 = () => {
   return (
     <div>
-      Status
-      <Outlet />
+        Layout4
+        <Outlet />
     </div>
   )
 }
 
-export default Status
+export default Layout4

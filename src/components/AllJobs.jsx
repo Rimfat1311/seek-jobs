@@ -1,8 +1,12 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 const AllJobs = () => {
   return (
-    <div>AllJobs</div>
+    <div>
+      AllJobs
+      <Outlet />
+    </div>
   )
 }
 
