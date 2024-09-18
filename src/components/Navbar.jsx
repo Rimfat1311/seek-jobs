@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className='flex w-full bg-white h-24 px-16 '>
       <ul className='flex flex-row w-full justify-between items-center '>
-        <li>  <img src={toggle} alt="toggle" style={{ width: '24px', height: '24px', color:'#3B82F6'}} /></li>
+        <li><img src={toggle} alt="toggle"/></li>
         <li className='text-3xl '>Dashboard</li>
         <li><select className='focus:outline-none bg-[#3B82F6] p-2 rounded-lg text-white'>
           <option>Test User </option>
