@@ -32,7 +32,7 @@ const AllJobs = () => {
             className='bg-[#E0E8F9] py-1 px-8 rounded-md'
              />
           </label> 
-          <button className=' rounded-md bg-[#FFEEEE] h-10 w-60 mt-5' >Clear Filter</button>
+          <button className=' rounded-md bg-[#FFEEEE] h-8 w-60 mt-5' ></button>
           </div>
         </form>
       </div>
