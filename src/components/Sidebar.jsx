@@ -18,8 +18,8 @@ const Sidebar = () => {
         <img src={logo} alt="" />
         <ul className='flex flex-col space-y-8'>
           <Link to="status" className='flex gap-5'> <img src={icon1}  /> Status</Link>
-          <Link to="addJobs" className='flex gap-5'> <img src={icon2} /> Add job</Link>
           <Link to="allJobs" className='flex gap-5'> <img src={icon3} /> All job</Link>
+          <Link to="addJobs" className='flex gap-5'> <img src={icon2} /> Add job</Link>
           <Link to="profile" className='flex gap-5'> <img src={icon4} /> Profile</Link>
         </ul>
       </div>

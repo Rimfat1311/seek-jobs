@@ -13,7 +13,7 @@ import Layout4 from './Layout4';
 
 const Dashboard = () => {
   return (
-    <main className='w-full flex h-full'>
+    <main className='w-full flex h-screen'>
       <Sidebar />
       <div className='bg-[#F0F4F8] w-4/5'>
         <Navbar />
@@ -21,9 +21,8 @@ const Dashboard = () => {
         <Routes>
           
             <Route path="status" element={<Status />} />
-            
-            <Route path="addJobs" element={<AddJobs />} />
             <Route path="allJobs" element={<AllJobs />} />
+            <Route path="addJobs" element={<AddJobs />} />
             <Route path="profile" element={<Profile />} />
           
         </Routes>
