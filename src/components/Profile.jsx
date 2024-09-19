@@ -6,6 +6,7 @@ const Profile = () => {
     <div>
       Profile
       <Outlet />
+      
     </div>
   )
 }
