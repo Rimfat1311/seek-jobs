@@ -14,20 +14,20 @@ const AllJobs = () => {
             className='bg-[#E0E8F9] py-1 px-8 rounded-md'
              />
           </label>
-          <label className='flex flex-col ' htmlFor="">statut
+          <label className='flex flex-col ' htmlFor="">status
             <input 
             type="text"
             className='bg-[#E0E8F9] py-1 px-8 rounded-md'
              />
           </label>
-          <label className='flex flex-col' htmlFor="">Types
+          <label className='flex flex-col' htmlFor="">Type
             <input 
             type="text"
             className='bg-[#E0E8F9] py-1 px-8 rounded-md'
              />
           </label>
           <label className='flex flex-col' htmlFor="">sort
-            <input 
+            <input
             type="text"
             className='bg-[#E0E8F9] py-1 px-8 rounded-md'
              />
