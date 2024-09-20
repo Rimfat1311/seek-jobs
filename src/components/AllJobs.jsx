@@ -14,7 +14,7 @@ const AllJobs = () => {
             className='bg-[#E0E8F9] py-1 px-8 rounded-md'
              />
           </label>
-          <label className='flex flex-col ' htmlFor="">status
+          <label className='flex flex-col ' htmlFor="">Status
             <input 
             type="text"
             className='bg-[#E0E8F9] py-1 px-8 rounded-md'
@@ -26,7 +26,7 @@ const AllJobs = () => {
             className='bg-[#E0E8F9] py-1 px-8 rounded-md'
              />
           </label>
-          <label className='flex flex-col' htmlFor="">sort
+          <label className='flex flex-col' htmlFor="">Sort
             <input
             type="text"
             className='bg-[#E0E8F9] py-1 px-8 rounded-md'
