@@ -14,13 +14,13 @@ const AllJobs = () => {
             className='bg-[#E0E8F9] py-1 px-8 rounded-md'
              />
           </label>
-          <label className='flex flex-col ' htmlFor="">Statu
+          <label className='flex flex-col ' htmlFor="">Status
             <input 
             type="text"
             className='bg-[#E0E8F9] py-1 px-8 rounded-md'
              />
           </label>
-          <label className='flex flex-col' htmlFor="">Types
+          <label className='flex flex-col' htmlFor="">Type
             <input 
             type="text"
             className='bg-[#E0E8F9] py-1 px-8 rounded-md'
@@ -32,7 +32,7 @@ const AllJobs = () => {
             className='bg-[#E0E8F9] py-1 px-8 rounded-md'
              />
           </label> 
-          <button className=' rounded-md bg-[#FFEEEE] h-8 w-60 mt-5' >Clear Filter everything</button>
+          <button className=' rounded-md bg-[#FFEEEE] h-8 w-60 mt-5' >Clear Filter</button>
           </div>
         </form>
       </div>
