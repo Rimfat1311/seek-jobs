@@ -12,7 +12,11 @@ import Layout3 from './Layout3';
 import Layout4 from './Layout4';
 
 const Dashboard = () => {
+const [SidebarOpen, setSidebarOpen] = useState(true)
 
+const handleSidebar = () =>{
+  setSidebarOpen(!SidebarOpen)
+}
 
   return (
     <main className='w-full flex h-screen'>
