@@ -6,11 +6,7 @@ import { FaBug } from "react-icons/fa";
 
 
 const Status = () => {
-  // const data = {
-  //   item1: { quantity: '28', icon:'', description: 'pending applications' },
-  //   item2: { name: 'Item 2', icon:'', description: 'interviews scheduled' },
-  //   item3: { name: 'Item 3', icon:'', description: 'jobs declined' },
-  // };
+  
   return (
     <div>
       <Outlet />
