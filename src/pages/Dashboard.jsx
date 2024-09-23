@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
@@ -12,11 +12,17 @@ import Layout3 from './Layout3';
 import Layout4 from './Layout4';
 
 const Dashboard = () => {
+const [SidebarOpen, setSidebarOpen] = useState(true)
+
+const handleSidebar = () =>{
+  setSidebarOpen(!SidebarOpen)
+}
+
   return (
     <main className='w-full flex h-screen'>
       <Sidebar />
       <div className='bg-[#F0F4F8] w-4/5'>
-        <Navbar />
+        <Navbar  Sidebar={handleSidebar}/>
         
         <Routes>
           

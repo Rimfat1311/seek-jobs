@@ -9,7 +9,7 @@ const AddJobs = () => {
           <p className=' text-3xl pb-2'>Add Job</p>
           <div className='flex  flex-wrap   gap-x-10'>
             <div>
-              <label className='flex flex-col py-3 ' htmlFor="position">Position </label>
+              <label className='flex flex-col py-3 ' htmlFor="position">Position</label>
               <input
                 id='position'
                 type="text"
@@ -42,7 +42,20 @@ const AddJobs = () => {
                 type="text"
                 value="/"
                 className='bg-[#F0F4F8] py-1 w-64 rounded-md pl-3'>
-                <option value="/">all</option>
+                <option value="interview">interview</option>
+                <option value="declined">declined</option>
+                <option value="pending">pending</option>
+
+              </select>
+            </div>
+
+            <div>
+              <label className='flex flex-col py-3' htmlFor="type">Jobe Type</label>
+              <select
+                id='type'
+                type="text"
+                value="/"
+                className='bg-[#F0F4F8] py-1 w-64 rounded-md pl-3'>
                 <option value="full-time">full-time</option>
                 <option value="psrt-time">part-time</option>
                 <option value="remote">remote</option>
@@ -50,21 +63,10 @@ const AddJobs = () => {
               </select>
             </div>
 
-            <div>
-              <label className='flex flex-col py-3' htmlFor="sort">Sort </label>
-              <select
-                id='sort'
-                type="text"
-                value="/"
-                className='bg-[#F0F4F8] py-1 w-64 rounded-md pl-3'>
-                <option value="/">latest</option>
-                <option value="oldest">oldest</option>
-                <option value="a-z">a-z</option>
-                <option value="z-a">z-a</option>
-              </select>
+            <div className='flex gap-5 text-white'>
+              <button className=' rounded-md bg-[#627D98] hover:bg-[#000000] h-8 w-28 mt-12' >Clear</button>
+              <button className=' rounded-md bg-[#3B82F6] hover:bg-[#0000ff] h-8 w-28 mt-12' >Submit</button>
             </div>
-
-            <button className=' rounded-md bg-[#FFEEEE] hover:bg-[#D66A6A] h-8 w-64 mt-12' >Clear Filter</button>
           </div>
         </form>
       </div>
