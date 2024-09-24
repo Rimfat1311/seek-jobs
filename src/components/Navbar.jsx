@@ -3,7 +3,7 @@ import toggle from '../assets/toggle.svg'
 import { IoMdContact } from "react-icons/io";
 import { FaSortDown } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
   const [dropdown, setDropdown] = useState(false)
 
   const handleClick = ()=>{
@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className='flex w-full bg-white h-24 px-16 '>
       <ul className='flex flex-row w-full justify-between items-center '>
-        <li><img src={toggle} alt="toggle"/></li>
+        <li onClick={toggleSidebar}> <img src={toggle} alt="toggle"/></li>
         <li className='text-3xl'>Dashboard</li>
         <li className='space-y-2 relative'>
           <div onClick={handleClick}

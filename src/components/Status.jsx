@@ -14,7 +14,7 @@ const Status = () => {
   return (
     <div>
       <Outlet />
-      <div className='flex gap-x-5 w-full h-64 py-8  px-12'>
+      <div className='flex gap-x-5 w-full h-64 py-8  px-12 justify-center'>
         <div className='flex flex-col justify-center bg-white w-80 rounded-md p-10 space-y-9 border-b-4 border-[#E9B949] '>
           <div className='flex flex-row  space-x-20 text-[#E9B949]  font-semibold items-center '>
             <p className='text-6xl '>28</p>
