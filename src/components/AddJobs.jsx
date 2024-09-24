@@ -40,7 +40,7 @@ const AddJobs = () => {
             </div>
 
             <div>
-              <label className='flex flex-col py-3 ' htmlFor="job location">Job Locatin </label>
+              <label className='flex flex-col py-3 ' htmlFor="job location">Jobs Location </label>
               <input
                 id='jobLocation'
                 type="text"
