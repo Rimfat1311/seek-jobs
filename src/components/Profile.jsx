@@ -26,7 +26,7 @@ const Profile = () => {
           </div>
 
           <div>
-            <label className='flex flex-col py-3 ' htmlFor="last name">Last Name </label>
+            <label className='flex flex-col py-3 ' htmlFor="last name">Last Name</label>
             <input
               id='last name'
               type="text"
@@ -37,7 +37,7 @@ const Profile = () => {
           </div>
 
           <div>
-            <label className='flex flex-col py-3 ' htmlFor="email">Email </label>
+            <label className='flex flex-col py-3 ' htmlFor="email">Email</label>
             <input
               id='email'
               type="text"
@@ -48,7 +48,7 @@ const Profile = () => {
           </div>
 
           <div>
-            <label className='flex flex-col py-3 ' htmlFor="location">Location </label>
+            <label className='flex flex-col py-3 ' htmlFor="location">Location</label>
             <input
               id='location'
               type="text"
