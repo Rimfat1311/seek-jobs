@@ -11,7 +11,7 @@ const Navbar = ({ toggleSidebar }) => {
                             
   }
   return (
-    <div className='flex w-full bg-white h-24 px-16 '>
+    <div className='sticky top-0 flex w-full bg-white h-24 px-16 '>
       <ul className='flex flex-row w-full justify-between items-center '>
         <li onClick={toggleSidebar}> <img src={toggle} alt="toggle"/></li>
         <li className='text-3xl'>Dashboard</li>

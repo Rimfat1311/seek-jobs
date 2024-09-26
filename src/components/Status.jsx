@@ -3,6 +3,9 @@ import { Outlet } from 'react-router-dom'
 import { MdCardTravel } from "react-icons/md";
 import { FaCalendarCheck } from "react-icons/fa";
 import { FaBug } from "react-icons/fa";
+import MyChart from './MyChart'
+
+
 
 
 const Status = () => {
@@ -27,7 +30,7 @@ const Status = () => {
             <p className='text-6xl '>2</p>
             <p className='bg-[#E0E8F9] rounded-md p-3 text-4xl'><FaCalendarCheck /></p>
           </div>
-          <div className=' text-xl'>pending Applications</div>
+          <div className=' text-xl'>interviews scheduled</div>
         </div>
         <div className='flex flex-col justify-center bg-white w-80 rounded-md p-10 space-y-9 border-b-4 border-[#D66A6A] '>
           <div className='flex flex-row  space-x-20 text-[#D66A6A]  font-semibold items-center '>
@@ -35,14 +38,17 @@ const Status = () => {
             <p className='bg-[#FFEEEE] rounded-md p-3 text-4xl'><FaBug />
             </p>
           </div>
-          <div className=' text-xl'>pending Applications</div>
+          <div className=' text-xl'>jobs declined</div>
         </div>
       </div>
       <div className='flex flex-col items-center justify-center'>
         <p className='text-2xl'>Monthly Applications</p>
         <p>Area Chart</p>
+        <div>
+          
+        </div>
       </div>
-
+<MyChart />
     </div>
   )
 }

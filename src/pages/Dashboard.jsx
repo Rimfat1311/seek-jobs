@@ -19,9 +19,9 @@ const handleSidebar = () =>{
 }
 
   return (
-    <main className='w-full flex h-screen'>
+    <main className='w-full flex h-screen overflow-hidden' >
         {SidebarOpen && <Sidebar />}
-      <div className='bg-[#F0F4F8] w-4/5 flex-1 '>
+      <div className='bg-[#F0F4F8] w-4/5 flex-1 h-full overflow-auto '>
         <Navbar  toggleSidebar={handleSidebar}/>
         
         <Routes>
