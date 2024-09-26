@@ -86,6 +86,7 @@ const AddJobs = () => {
             </div>
           </div>
         </form>
+        <div></div>
       </div>
       <Outlet />
     </div>
