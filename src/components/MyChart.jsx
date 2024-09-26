@@ -67,7 +67,7 @@ const MyChart = () => {
             {
                 label: '0,2,4,6,8',
                 data: [8, 6, 4, 5, 6, 5],
-                backgroundColor: 'rgba(124, 124, 213, 0.6)',
+                backgroundColor: '#3B82F6',
                 borderColor: 'rgb(124, 124, 213)',
                 borderWidth: 1,
             }
@@ -98,7 +98,7 @@ const MyChart = () => {
             },
             x: {
                 ticks: {
-                    autoSkip: false, // Prevent skipping labels on x-axis
+                    autoSkip: true, // Prevent skipping labels on x-axis
                 },
             },
         },
