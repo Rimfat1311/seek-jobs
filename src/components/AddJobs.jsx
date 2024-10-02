@@ -81,8 +81,8 @@ const AddJobs = () => {
             </div>
 
             <div className='flex gap-5 text-white'>
-              <button className=' rounded-md bg-[#627D98] hover:bg-[#000000] h-8 w-28 mt-12' >Clear</button>
-              <button className=' rounded-md bg-[#3B82F6] hover:bg-[#0000ff] h-8 w-28 mt-12' >Submit</button>
+              <button className=' rounded-md bg-[#627D98] hover:bg-[#000000] h-8 w-28 mt-12' >Clear </button>
+              <button className=' rounded-md bg-[#3B82F6] hover:bg-[#0000ff] h-8 w-28 mt-12' >Submit </button>
             </div>
           </div>
         </form>
