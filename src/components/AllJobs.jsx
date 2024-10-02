@@ -22,7 +22,7 @@ const AllJobs = () => {
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className='bg-[#F0F4F8] py-1 px-9 rounded-md '
+                className='bg-[#F0F4F8] py-1 px-9 rounded-md'
               />
             </div>
 
