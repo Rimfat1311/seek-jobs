@@ -49,7 +49,6 @@ const AddJobs = () => {
                 className='bg-[#F0F4F8] py-1 px-9 rounded-md '
               />
             </div>
-
             <div>
               <label className='flex flex-col py-3' htmlFor="type">Status </label>
               <select
@@ -79,7 +78,6 @@ const AddJobs = () => {
                 <option value="internship">internship</option>
               </select>
             </div>
-
             <div className='flex gap-5 text-white'>
               <button className=' rounded-md bg-[#627D98] hover:bg-[#000000] h-8 w-28 mt-12' >Clear </button>
               <button className=' rounded-md bg-[#3B82F6] hover:bg-[#0000ff] h-8 w-28 mt-12' >Submit </button>
