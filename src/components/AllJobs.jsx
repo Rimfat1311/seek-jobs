@@ -76,7 +76,7 @@ const AllJobs = () => {
              h-8 w-64 mt-12' >Clear Filter</button>
           </div>
         </form>
-        <div>backend interaction needed here</div>
+       
       </div>
       <Outlet />
     </div>
